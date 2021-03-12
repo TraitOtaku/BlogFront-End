@@ -21,24 +21,28 @@ $py-color: #3571A3;
 
 body {
     background-color: $black-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
-h1, h2, h3, h4, h5, h6, p, a {
-  color: #aaabac;
+h1, h2, h3 {
+  color: white;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 500;
 }
 
-
-
-
+h4, h5, h6, p, a {
+  color: #aaabac;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
 
 /*----------------
      NavBar
   ----------------*/ 
 nav {
   background-color: $main-bg-color;
-
   a:hover {
     color: $accent-color;
   }
@@ -148,26 +152,24 @@ nav {
 }
 
 /*----------------
-     Blog Detail Page
+     Blog Toc 
   ----------------*/ 
-  .content-section {
-    background: lavender;
-    height: 1000px;
-    min-height: 100vh;
-    padding: 1em;
-  }
-
-  .sidebar-section {
-    height: 100%;
-  }
-
-  .sidebar-content {
-    background: cornflowerblue;
-    padding: 1em;
+  #ToC{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: silver;
+    border-radius: 10px;
+    width: 40%;
+    border: 1px solid Black;
+    padding: 10px;
+    margin: 10px;
+    float:right;
+}
 
 /*----------------
      Footer
   ----------------*/ 
-  footer {
-    background-color: $footer-color;
-  }
+footer {
+  background-color: $footer-color;
+  margin-top: auto;
+}
